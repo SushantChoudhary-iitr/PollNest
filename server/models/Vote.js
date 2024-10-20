@@ -11,10 +11,6 @@ const VoteSchema = new mongoose.Schema({
     ref: 'User', // Referencing the User model
     required: true,
   },
-  date: {
-    type: Date,
-    default: Date.now,
-  },
 });
 
 module.exports = mongoose.model('Vote', VoteSchema);
